@@ -21,3 +21,30 @@
 {"level":"info","message":"Server running on port 3000","timestamp":"2024-12-07T23:53:23.006Z"}
 {"level":"error","message":"Login error: Operation `users.findOne()` buffering timed out after 10000ms","timestamp":"2024-12-07T23:57:05.107Z"}
 {"level":"error","message":"Login error: Operation `users.findOne()` buffering timed out after 10000ms","timestamp":"2024-12-08T00:00:41.897Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-12-08T06:30:06.580Z"}
+{"level":"info","message":"User logged in: a.b@gmail.com","timestamp":"2024-12-08T06:31:01.110Z"}
+{"level":"info","message":"POST /api/auth/login 200","timestamp":"2024-12-08T06:31:01.129Z"}
+{"level":"info","message":"GET /api/dashboard/stats 500","timestamp":"2024-12-08T06:31:01.563Z"}
+{"level":"info","message":"GET /api/appointments 304","timestamp":"2024-12-08T06:31:01.580Z"}
+{"level":"info","message":"GET /api/dashboard/stats 500","timestamp":"2024-12-08T06:31:02.722Z"}
+{"level":"info","message":"GET /api/dashboard/stats 500","timestamp":"2024-12-08T06:31:04.876Z"}
+{"level":"info","message":"GET /api/dashboard/stats 500","timestamp":"2024-12-08T06:31:09.028Z"}
+{"level":"info","message":"GET /api/dashboard/stats 500","timestamp":"2024-12-08T06:32:30.269Z"}
+{"level":"info","message":"GET /api/appointments 304","timestamp":"2024-12-08T06:32:30.285Z"}
+{"level":"info","message":"GET /api/dashboard/stats 500","timestamp":"2024-12-08T06:32:31.602Z"}
+{"level":"info","message":"GET /api/dashboard/stats 500","timestamp":"2024-12-08T06:32:33.828Z"}
+{"level":"info","message":"GET /api/appointments 304","timestamp":"2024-12-08T06:32:37.334Z"}
+{"level":"info","message":"GET /api/dashboard/stats 500","timestamp":"2024-12-08T06:32:38.254Z"}
+{"level":"info","message":"GET /api/dashboard/stats 500","timestamp":"2024-12-08T06:33:06.223Z"}
+{"level":"info","message":"GET /api/appointments 304","timestamp":"2024-12-08T06:33:06.233Z"}
+{"level":"info","message":"GET /api/dashboard/stats 500","timestamp":"2024-12-08T06:33:07.513Z"}
+{"level":"info","message":"GET /api/dashboard/stats 500","timestamp":"2024-12-08T06:33:09.667Z"}
+{"level":"info","message":"GET /api/dashboard/stats 500","timestamp":"2024-12-08T06:33:13.810Z"}
+{"level":"info","message":"GET /api/auth/verify 404","timestamp":"2024-12-08T06:33:58.127Z"}
+{"level":"info","message":"GET /api/auth/verify 404","timestamp":"2024-12-08T06:33:58.142Z"}
+{"level":"info","message":"User logged in: a.b@gmail.com","timestamp":"2024-12-08T06:34:00.922Z"}
+{"level":"info","message":"POST /api/auth/login 200","timestamp":"2024-12-08T06:34:00.924Z"}
+{"level":"info","message":"GET /api/dashboard/stats 500","timestamp":"2024-12-08T06:34:01.281Z"}
+{"level":"info","message":"GET /api/appointments 304","timestamp":"2024-12-08T06:34:01.287Z"}
+{"level":"info","message":"GET /api/dashboard/stats 500","timestamp":"2024-12-08T06:34:02.430Z"}
+{"level":"info","message":"GET /api/dashboard/stats 500","timestamp":"2024-12-08T06:34:04.573Z"}
