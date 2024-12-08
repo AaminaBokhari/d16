@@ -5,6 +5,7 @@ import prescriptionRoutes from '../routes/prescriptions.js';
 import medicalHistoryRoutes from '../routes/medicalHistory.js';
 import patientRoutes from '../routes/patients.js';
 import chatRoutes from '../routes/chat.js';
+import dashboardRoutes from '../routes/dashboard.js';
 import { errorHandler, notFound } from '../middleware/errorHandler.js';
 
 export const configureRoutes = (app) => {
@@ -16,8 +17,9 @@ export const configureRoutes = (app) => {
   app.use('/api/medical-history', medicalHistoryRoutes);
   app.use('/api/patients', patientRoutes);
   app.use('/api/chat', chatRoutes);
+  app.use('/api/dashboard', dashboardRoutes);
 
-  // Error handlers - MOVED HERE
+  // Error handlers
   app.use(notFound);
   app.use(errorHandler);
 };
