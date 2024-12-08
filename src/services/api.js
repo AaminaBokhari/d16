@@ -43,14 +43,21 @@ api.interceptors.response.use(
 );
 
 // Auth endpoints
-const auth = {
+export const auth = {
   login: (credentials) => api.post('/auth/login', credentials),
   register: (userData) => api.post('/auth/register', userData),
   verify: () => api.get('/auth/verify')
 };
 
+// Dashboard endpoints
+export const dashboard = {
+  getStats: () => api.get('/dashboard/stats'),
+  getPatientStats: () => api.get('/dashboard/patient-stats'),
+  getActivities: (limit) => api.get(`/dashboard/activities${limit ? `?limit=${limit}` : ''}`)
+};
+
 // Appointments endpoints
-const appointments = {
+export const appointments = {
   getAll: () => api.get('/appointments'),
   create: (data) => api.post('/appointments', data),
   update: (id, data) => api.patch(`/appointments/${id}`, data),
@@ -59,24 +66,23 @@ const appointments = {
 };
 
 // Medical history endpoints
-const medicalHistory = {
+export const medicalHistory = {
   getAll: () => api.get('/medical-history'),
   getForPatient: (patientId) => api.get(`/medical-history/patient/${patientId}`),
   create: (data) => api.post('/medical-history', data)
 };
 
 // Prescriptions endpoints
-const prescriptions = {
+export const prescriptions = {
   getAll: () => api.get('/prescriptions'),
   create: (data) => api.post('/prescriptions', data),
   getById: (id) => api.get(`/prescriptions/${id}`)
 };
 
-export {
+export default {
   auth,
+  dashboard,
   appointments,
   medicalHistory,
   prescriptions
 };
-
-export default api;

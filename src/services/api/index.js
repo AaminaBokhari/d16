@@ -11,6 +11,13 @@ export const auth = {
   verify: () => axiosInstance.get('/auth/verify')
 };
 
+// Dashboard endpoints
+export const dashboard = {
+  getStats: () => axiosInstance.get('/dashboard/stats'),
+  getPatientStats: () => axiosInstance.get('/dashboard/patient-stats'),
+  getActivities: (limit) => axiosInstance.get(`/dashboard/activities${limit ? `?limit=${limit}` : ''}`)
+};
+
 // Appointments endpoints
 export const appointments = {
   getAll: () => axiosInstance.get('/appointments'),
@@ -36,6 +43,7 @@ export const prescriptions = {
 
 export default {
   auth,
+  dashboard,
   appointments,
   medicalHistory,
   prescriptions
